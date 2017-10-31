@@ -1,3 +1,9 @@
+GIT
+  remote: https://github.com/PaulCalnan/pauls_view_tool
+  revision: bccea0bd0944272d4d423fed79dd05c0bfd521c6
+  specs:
+    pauls_view_tool (0.1.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -197,6 +203,7 @@ DEPENDENCIES
   jbuilder (~> 2.5)
   jquery-rails
   listen (>= 3.0.5, < 3.2)
+  pauls_view_tool!
   pg (~> 0.18)
   pry-byebug
   puma (~> 3.7)
@@ -210,4 +217,4 @@ DEPENDENCIES
   web-console (>= 3.3.0)
 
 BUNDLED WITH
-   1.15.4
+   1.16.0.pre.3
