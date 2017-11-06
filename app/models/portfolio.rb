@@ -1,5 +1,5 @@
 class Portfolio < ApplicationRecord
-  has_many :technologies, dependent: :destroy
+  has_many :technologies, dependent: :destroy # ,dependant: :destroy could be the culprit here for technology bug#
   accepts_nested_attributes_for :technologies,
                                 reject_if: lambda { |attrs| attrs['name'].blank? }
 
@@ -8,6 +8,10 @@ class Portfolio < ApplicationRecord
 
   def self.angular
     where(subtitle: 'Angular')
+  end
+
+  def self.by_position
+    order("position ASC")
   end
 
   scope :ruby_on_rails_portfolio_items, -> { where(subtitle: 'Ruby on Rails')}
