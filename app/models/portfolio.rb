@@ -1,6 +1,7 @@
 class Portfolio < ApplicationRecord
   has_many :technologies, dependent: :destroy # ,dependant: :destroy could be the culprit here for technology bug#
   accepts_nested_attributes_for :technologies,
+                                allow_destroy: true,
                                 reject_if: lambda { |attrs| attrs['name'].blank? }
 
   validates_presence_of :title, :body
