@@ -1,27 +1,96 @@
-<h1>About me</h1>
+<div class="app-card-container">
+  <div class="card">
+    <h1>About me</h1>
 
-<hr>
+    <hr>
 
-<div class="row">
-  <div class="col-md-4">
-    <%= image_tag "PaulProfile.jpg", width: 300, alt: "profile image" %>
-  </div>
+    <div class="row">
+      <div class="col-md-4">
+        <%= image_tag "PaulProfile.jpg", width: 300, alt: "profile image", class: 'profile-img' %>
 
-  <div class="col-md-8">
-    <p>Although a late starter to a career in coding, I've finally arrived at the place where I was always meant to be.</p>
+        <div class="skills">
+          <% @skills.each do |skill| %>
+            <div class="skill">
+              <h4><%= skill.title %></h4>
+              <div class="progress">
+                <div
+                  class="progress-bar progress-bar-striped bg-warning"
+                  role="progressbar"
+                  aria-valuenow="<%= skill.percent_utilized %>"
+                  aria-valuemax="100"
+                  style="width: <%= skill.percent_utilized %>%"
+                ></div>
+              </div>
+            </div>
 
-    <p>I've always played around with all things tech from a young age pulling apart electronic toys to see how they worked.
-    Around the age of 12 my first computer was the popular Commodore 64. I must have spent a good part of my childhood trying to work out BASIC and
-     amazing my friends with nifty little 'if-then-else' programs where you could get a response from entering names.</p>
+          <% end %>
+        </div>
+      </div>
 
-    <p>As for larger programs like games, I would spend more time looking at the code wondering how it all worked than playing the game.
-    With no understanding of the underlying code I would change different values within the code and then run the program to see what had changed within the game,
-     if it would run again at all! The internet was non existant at this time of my life,
-     anything I wanted to know with regard to coding was picked up from books or magazines.</p>
+      <div class="col-md-8">
+        <p>Although a late starter to a career in coding, I've finally arrived at the place where I was always meant to be.</p>
 
-    <p>Moving on through my teen years, it was finally time to go and get a job, and I reluctantly took an offer as an Electrical Apprentice.
-    Coding became a side hobby from then on....</p>
+        <p>I've always played around with all things tech from a young age pulling apart electronic toys to see how they worked.
+        Around the age of 12 my first computer was the popular Commodore 64. I must have spent a good part of my childhood trying to work out BASIC and
+         amazing my friends with nifty little 'if-then-else' programs where you could get a response from entering names.</p>
 
-    <p>Now after 20 years as an Electrician, A mid-life career move into coding is well overdue.</p>
+        <p>As for larger programs like games, I would spend more time looking at the code wondering how it all worked than playing the game.
+        With no understanding of the underlying code I would change different values within the code and then run the program to see what had changed within the game,
+         if it would run again at all! The internet was non existant at this time of my life,
+         anything I wanted to know with regard to coding was picked up from books or magazines.</p>
+
+        <p>Moving on through my teen years, it was finally time to go and get a job, and I reluctantly took an offer as an Electrical Apprentice.
+        Coding became a side hobby from then on....</p>
+
+        <p>Now after 20 years as an Electrician, A mid-life career move into coding is well overdue.</p>
+
+        <p>
+          <button
+            class="btn btn-primary"
+            type="button"
+            data-toggle="collapse"
+            data-target="#projects"
+            aria-expanded="false"
+            aria-controler="projects"
+          >
+          Projects
+          </button>
+
+          <button
+            class="btn btn-primary"
+            type="button"
+            data-toggle="collapse"
+            data-target="#education"
+            aria-expanded="false"
+            aria-controller="education"
+          >
+          Education
+          </button>
+        </p>
+
+        <p>
+          <div class="collapse" id="projects">
+            <div class="card card-block">
+              Project 1
+            </div>
+            <div class="card card-block">
+              Project 2
+            </div>
+          </div>
+
+          <div class="collapse" id="education">
+            <div class="card card-block">
+              Education 1
+            </div>
+            <div class="card card-block">
+              Education 2
+            </div>
+            <div class="card card-block">
+              Education 3
+            </div>
+          </div>
+        </p>
+      </div>
+    </div>
   </div>
 </div>
