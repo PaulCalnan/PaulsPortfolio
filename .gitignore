@@ -21,3 +21,6 @@
 # I dont't want to show my secrets
 /config/secrets.yml
 .env
+/public/packs
+/public/packs-test
+/node_modules
