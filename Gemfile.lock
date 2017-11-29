@@ -304,6 +304,7 @@ DEPENDENCIES
   pauls_view_tool!
   petergate (~> 1.8)
   pg (~> 0.18)
+  popper_js (~> 1.12, >= 1.12.5)
   pry-byebug
   puma (~> 3.7)
   rails (~> 5.1.3)
