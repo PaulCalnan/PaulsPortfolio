@@ -291,7 +291,7 @@ DEPENDENCIES
   coffee-rails (~> 4.2)
   devise (~> 4.3)
   dotenv (~> 2.2, >= 2.2.1)
-  dotenv-rails (~> 2.1, >= 2.1.2)
+  dotenv-rails
   font-awesome-rails (~> 4.7, >= 4.7.0.2)
   friendly_id (~> 5.1.0)
   gritter (~> 1.2)
@@ -322,4 +322,4 @@ RUBY VERSION
    ruby 2.4.0p0
 
 BUNDLED WITH
-   1.15.2
+   1.16.0
