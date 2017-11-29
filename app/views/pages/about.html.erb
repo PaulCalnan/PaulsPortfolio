@@ -1,5 +1,4 @@
 <div class="app-card-container">
-
   <div class="card">
     <h1>About me</h1>
 
@@ -31,32 +30,65 @@
       <div class="col-md-8">
         <p>Although a late starter to a career in coding, I've finally arrived at the place where I was always meant to be.</p>
 
-        <p>From a young age I've always had a natural ability towards understanding anything and everything involving computers and electronics.
-          I believe I must have pulled apart every single electronic device I've ever owned.<br>Some of them never worked the same again!
-        </p>
-        <p>
-        Around the age of 12 my first computer was the popular Commodore 64.
-        I must have spent a good part of my childhood trying to work out BASIC computer language and also pulling the machine to bits to see what made it tick.<br>
-        My very first programs written in BASIC revolved around amazing my friends with nifty little 'if-then-else' statements where you could get a response from entering data.<br>
-        As for complex programs like games, I would spend more time looking at the code wondering how it all worked than playing the game.
+        <p>I've always played around with all things tech from a young age pulling apart electronic toys to see how they worked.
+        Around the age of 12 my first computer was the popular Commodore 64. I must have spent a good part of my childhood trying to work out BASIC and
+         amazing my friends with nifty little 'if-then-else' programs where you could get a response from entering names.</p>
+
+        <p>As for larger programs like games, I would spend more time looking at the code wondering how it all worked than playing the game.
         With no understanding of the underlying code I would change different values within the code and then run the program to see what had changed within the game,
-        (if it would run again at all!)<br>
-        The internet was non existant at this time of my life and anything I wanted to know with regard to coding was picked up from books or magazines.</p>
+         if it would run again at all! The internet was non existant at this time of my life,
+         anything I wanted to know with regard to coding was picked up from books or magazines.</p>
 
-        <p>Moving on through my teen years, coding and tinkering became a side hobby as it was finally time to venture out into the real world and get a job.<br>
-          I was soon offered a position as an Electrical Apprentice and I grabbed the offer.<br>
-          After many years I have gained a broad range of skills across all facets of the electrical industry.
-          To my advantage, skills mastered during my electrical career are equally valuable within coding.<br>
-          Applying logical thought with regard to circuit design or fault finding.
-          The ability to deal with people, to listen and interpret client needs.
-          Thinking outside of the box to provide solutions to problems are all of benefit and transferrable to the coding world.</p>
+        <p>Moving on through my teen years, it was finally time to go and get a job, and I reluctantly took an offer as an Electrical Apprentice.
+        Coding became a side hobby from then on....</p>
 
-        <p>Now after 20 years working within the electrical industry, a career move into coding is well overdue.</p>
+        <p>Now after 20 years as an Electrician, A mid-life career move into coding is well overdue.</p>
 
         <p>
-          <%= render 'about_buttons' %>
-          <%= render 'about_projects' %>
-          <%= render 'about_education' %>
+          <button
+            class="btn btn-primary"
+            type="button"
+            data-toggle="collapse"
+            data-target="#projects"
+            aria-expanded="false"
+            aria-controler="projects"
+          >
+          Projects
+          </button>
+
+          <button
+            class="btn btn-primary"
+            type="button"
+            data-toggle="collapse"
+            data-target="#education"
+            aria-expanded="false"
+            aria-controller="education"
+          >
+          Education
+          </button>
+        </p>
+
+        <p>
+          <div class="collapse" id="projects">
+            <div class="card card-block">
+              Project 1
+            </div>
+            <div class="card card-block">
+              Project 2
+            </div>
+          </div>
+
+          <div class="collapse" id="education">
+            <div class="card card-block">
+              Education 1
+            </div>
+            <div class="card card-block">
+              Education 2
+            </div>
+            <div class="card card-block">
+              Education 3
+            </div>
+          </div>
         </p>
       </div>
     </div>
