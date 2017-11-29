@@ -24,6 +24,5 @@ module PaulsPortfolio
     config.generators.system_tests = nil
     config.eager_load_paths << "#{Rails.root}/lib"
     config.secret_key_base = ENV["SECRET_KEY_BASE"]
-    config.serve_static_assets = true
   end
 end
