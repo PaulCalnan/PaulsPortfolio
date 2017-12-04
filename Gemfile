@@ -48,5 +48,7 @@ gem 'twitter', '~> 6.2'
 gem 'redis', '~> 4.0', '>= 4.0.1'
 gem 'redcarpet', '~> 3.4'
 gem 'coderay', '~> 1.1', '>= 1.1.2'
+gem 'sprockets-rails', '~> 3.2', '>= 3.2.1'
+gem 'popper_js', '~> 1.12', '>= 1.12.5'
 
 ruby "2.4.0"
