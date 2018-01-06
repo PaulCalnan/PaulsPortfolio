@@ -20,7 +20,7 @@
 
 <div class="navbar navbar-dark bg-dark">
   <div class="container d-flex justify-content-between">
-    <a href="#" class="navbar-brand">Paul Calnan</a>
+    <a href="/" class="navbar-brand">Paul Calnan</a>
     <% if logged_in?(:site_admin) %>
       <%= link_to "New Portfolio Item", new_portfolio_path(@portfolio_item), class: 'btn btn-warning' %>
     <% end %>

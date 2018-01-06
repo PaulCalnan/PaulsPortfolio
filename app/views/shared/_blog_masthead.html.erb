@@ -3,8 +3,9 @@
     <h1 class="blog-title">My Blog</h1>
     <p class="lead blog-description">Things that have happened on the way to becoming a professional developer...</p>
     <span>
-      <%= link_to 'Write a new Blog', new_blog_path if logged_in?(:site_admin) %>
+      <%= link_to "Write a new Blog", new_blog_path if logged_in?(:site_admin) %>
     </span>
+    <br>
     <span>
       <%= link_to "Topics", topics_path %>
     </span>
