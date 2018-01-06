@@ -47,6 +47,7 @@ module ApplicationHelper
         url: tech_news_path,
         title: 'Tech News'
       },
+
     ]
   end
 
@@ -55,10 +56,10 @@ module ApplicationHelper
 
     nav_items.each do |item|
       nav_links << "<#{tag_type}><a href='#{item[:url]}'class='#{style} #{active? item[:url]}'>#{item[:title]}</a></#{tag_type}>"
-  end
+    end
 
 
-  nav_links.html_safe
+    nav_links.html_safe
   end
 
   def active? path
