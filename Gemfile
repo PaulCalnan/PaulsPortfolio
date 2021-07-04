@@ -5,7 +5,7 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
-gem 'rails', '~> 5.1.3'
+gem 'rails', '~> 5.2.6'
 gem 'pg', '~> 0.18'
 gem 'puma', '~> 3.7'
 gem 'sass-rails', '~> 5.0'
@@ -31,7 +31,7 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'friendly_id', '~> 5.1.0'
 gem 'devise', '~> 4.3'
 #gem 'bootstrap', '~> 4.0.0.alpha6'
-gem 'bootstrap', '~> 4.0.0.beta2.1'
+gem 'bootstrap', '~> 5.0.1'
 gem 'pauls_view_tool', git: 'https://github.com/PaulCalnan/pauls_view_tool'
 gem 'petergate', '~> 1.8'
 gem 'font-awesome-rails', '~> 4.7', '>= 4.7.0.2'
@@ -49,6 +49,8 @@ gem 'redis', '~> 4.0', '>= 4.0.1'
 gem 'redcarpet', '~> 3.4'
 gem 'coderay', '~> 1.1', '>= 1.1.2'
 gem 'sprockets-rails', '~> 3.2', '>= 3.2.1'
-gem 'popper_js', '~> 1.12', '>= 1.12.5'
+gem 'popper_js', '~> 2.9.2', '>= 2.9.2'
+gem 'activesupport', '~> 5.2', '>= 5.2.6'
+gem 'webpacker', '~> 6.0.0.pre.2'
 
-ruby "2.4.0"
+ruby "2.7.3"

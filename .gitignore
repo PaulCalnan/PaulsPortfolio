@@ -21,3 +21,10 @@
 # I dont't want to show my secrets
 /config/secrets.yml
 .env
+
+/public/packs
+/public/packs-test
+/node_modules
+/yarn-error.log
+yarn-debug.log*
+.yarn-integrity
