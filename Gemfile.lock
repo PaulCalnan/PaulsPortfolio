@@ -188,7 +188,8 @@ GEM
       byebug (~> 11.0)
       pry (~> 0.13.0)
     public_suffix (4.0.6)
-    puma (3.12.6)
+    puma (5.3.2)
+      nio4r (~> 2.0)
     racc (1.5.2)
     rack (2.2.3)
     rack-proxy (0.7.0)
@@ -331,7 +332,7 @@ DEPENDENCIES
   pg (~> 0.18)
   popper_js (~> 2.9.2, >= 2.9.2)
   pry-byebug
-  puma (~> 3.7)
+  puma (>= 4.3.8)
   rails (~> 5.2.6)
   redcarpet (~> 3.4)
   redis (~> 4.0, >= 4.0.1)
