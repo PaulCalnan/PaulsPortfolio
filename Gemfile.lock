@@ -176,6 +176,8 @@ GEM
     nio4r (2.5.7)
     nokogiri (1.11.6-x86_64-darwin)
       racc (~> 1.4)
+    nokogiri (1.11.6-x86_64-linux)
+      racc (~> 1.4)
     orm_adapter (0.5.0)
     petergate (1.9.1)
       activerecord (> 4.0.0)
@@ -280,7 +282,7 @@ GEM
       multipart-post (~> 2.0)
       naught (~> 1.0)
       simple_oauth (~> 0.3.0)
-    tzinfo (1.2.9)
+    tzinfo (1.2.10)
       thread_safe (~> 0.1)
     uglifier (4.2.0)
       execjs (>= 0.3.0, < 3)
@@ -305,6 +307,7 @@ GEM
 
 PLATFORMS
   x86_64-darwin-20
+  x86_64-linux
 
 DEPENDENCIES
   activesupport (~> 5.2, >= 5.2.6)
