@@ -5,7 +5,7 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
-gem 'rails', '~> 5.2.6'
+gem 'rails', '~> 7.0.4'
 gem 'pg', '~> 0.18'
 gem "puma", ">= 4.3.8"
 gem 'sass-rails', '~> 5.0'
@@ -50,7 +50,7 @@ gem 'redcarpet', '~> 3.4'
 gem 'coderay', '~> 1.1', '>= 1.1.2'
 gem 'sprockets-rails', '~> 3.2', '>= 3.2.1'
 gem 'popper_js', '~> 2.9.2', '>= 2.9.2'
-gem 'activesupport', '~> 5.2', '>= 5.2.6'
+gem 'activesupport', '~> 7.0'
 gem 'webpacker', '~> 6.0.0.pre.2'
 
 ruby "2.7.3"
